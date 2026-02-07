@@ -1,0 +1,8 @@
+{
+  "name": "Vanitha Covering & Impon Jewellery",
+  "description": "Premium South Indian traditional jewellery e-commerce store specializing in Impon (Panchaloha) and Gold Covering ornaments.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}
