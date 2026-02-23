@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+  
+  --color-maroon-50: #fdf2f2;
+  --color-maroon-100: #fbe8e8;
+  --color-maroon-200: #f7d5d5;
+  --color-maroon-300: #f1b5b5;
+  --color-maroon-400: #e78b8b;
+  --color-maroon-500: #d95d5d;
+  --color-maroon-600: #c34242;
+  --color-maroon-700: #a43333;
+  --color-maroon-800: #892d2d;
+  --color-maroon-900: #722929;
+  --color-maroon-950: #3f1212;
+
+  --color-gold-50: #fcfce9;
+  --color-gold-100: #f8f8c6;
+  --color-gold-200: #f2f091;
+  --color-gold-300: #e8e154;
+  --color-gold-400: #dbc927;
+  --color-gold-500: #c2a81b;
+  --color-gold-600: #a17f14;
+  --color-gold-700: #815f13;
+  --color-gold-800: #6d4d17;
+  --color-gold-900: #5d4119;
+  --color-gold-950: #36230b;
+}
+
+@layer base {
+  body {
+    @apply bg-stone-50 text-stone-900 font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #c2a81b 0%, #a17f14 50%, #c2a81b 100%);
+}
+
+.maroon-gradient {
+  background: linear-gradient(135deg, #722929 0%, #3f1212 100%);
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl;
+}
